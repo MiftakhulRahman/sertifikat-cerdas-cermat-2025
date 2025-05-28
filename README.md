@@ -1,6 +1,6 @@
 # 🏆 Website Download Sertifikat - Cerdas Cermat Informatika Cup II 2025
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://[username].github.io/sertifikat-cerdas-cermat-2025/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://miftakhulrahman.github.io/sertifikat-cerdas-cermat-2025/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -33,7 +33,7 @@
 
 ## 🚀 Demo
 
-**Live Website**: [https://[username].github.io/sertifikat-cerdas-cermat-2025/](https://[username].github.io/sertifikat-cerdas-cermat-2025/)
+**Live Website**: [https://miftakhulrahman.github.io/sertifikat-cerdas-cermat-2025/](https://miftakhulrahman.github.io/sertifikat-cerdas-cermat-2025/)
 
 ### 🧪 Test dengan nama berikut:
 - `Ranti` → Sertifikat ditemukan
@@ -59,8 +59,7 @@ sertifikat-cerdas-cermat-2025/
 │   ├── 📄 Sertifikat_CerdasCermat_Winda_Anjani_Safitri.pdf
 │   ├── 📄 Sertifikat_CerdasCermat_Wardania_Rahayu.pdf
 │   └── ... (72 file lainnya)
-├── 📖 README.md               # Dokumentasi proyek
-└── 📋 participants.json       # Data peserta (optional)
+└── 📖 README.md               # Dokumentasi proyek
 ```
 
 ## 🛠️ Teknologi yang Digunakan
@@ -79,7 +78,7 @@ sertifikat-cerdas-cermat-2025/
 ## 📋 Cara Penggunaan
 
 ### Untuk Peserta:
-1. 🌐 Buka website: `https://[username].github.io/sertifikat-cerdas-cermat-2025/`
+1. 🌐 Buka website: `https://miftakhulrahman.github.io/sertifikat-cerdas-cermat-2025/`
 2. 🔍 Ketik nama lengkap di kolom pencarian
 3. 👀 Lihat hasil yang muncul secara real-time
 4. 📥 Klik tombol "Download Sertifikat" untuk mengunduh
@@ -101,7 +100,7 @@ sertifikat-cerdas-cermat-2025/
 ### Langkah Instalasi
 ```bash
 # Clone repository
-git clone https://github.com/[username]/sertifikat-cerdas-cermat-2025.git
+git clone https://github.com/miftakhulrahman/sertifikat-cerdas-cermat-2025.git
 
 # Masuk ke direktori
 cd sertifikat-cerdas-cermat-2025
@@ -206,14 +205,9 @@ Kontribusi sangat diterima! Untuk berkontribusi:
 
 Jika mengalami kesulitan:
 
-- 📧 Email: [email-panitia@domain.com]
-- 📱 WhatsApp: [+62-xxx-xxx-xxxx]
-- 💬 Telegram: [@panitia_cerdas_cermat]
-- 🐛 Issues: [GitHub Issues](https://github.com/[username]/sertifikat-cerdas-cermat-2025/issues)
+- 📧 Email: [miftakhulrahman@student.unuha.ac.id]
+- 📱 WhatsApp: [+62-857-6895-9398]
 
-## 📄 Lisensi
-
-Proyek ini dilisensikan di bawah [MIT License](LICENSE) - lihat file LICENSE untuk detail.
 
 ## 🙏 Acknowledgments
 
@@ -222,29 +216,10 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE) - lihat file LICENSE unt
 - 🌐 GitHub Pages untuk hosting gratis
 - 💻 Open source community
 
-## 📊 Roadmap
-
-### Version 2.0 (Coming Soon)
-- [ ] 🔐 Password protection untuk sertifikat
-- [ ] 📊 Dashboard analytics untuk panitia
-- [ ] 🎨 Multiple theme options
-- [ ] 📱 Progressive Web App (PWA)
-- [ ] 🔔 Push notifications
-- [ ] 🌐 Multi-language support
-
-### Version 1.1 (In Development)
-- [ ] 🔍 Advanced search filters
-- [ ] 📱 Share certificate via social media
-- [ ] 💾 Bulk download option
-- [ ] 📈 Download statistics
-
 ---
 
 <div align="center">
 
 **🏆 Dibuat dengan ❤️ untuk Cerdas Cermat Informatika Cup II 2025**
-
-[![GitHub stars](https://img.shields.io/github/stars/[username]/sertifikat-cerdas-cermat-2025.svg?style=social&label=Star)](https://github.com/[username]/sertifikat-cerdas-cermat-2025)
-[![GitHub forks](https://img.shields.io/github/forks/[username]/sertifikat-cerdas-cermat-2025.svg?style=social&label=Fork)](https://github.com/[username]/sertifikat-cerdas-cermat-2025/fork)
 
 </div>
