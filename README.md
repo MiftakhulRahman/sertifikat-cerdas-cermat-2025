@@ -9,7 +9,7 @@
 
 ## 📸 Preview
 
-![Website Preview](https://via.placeholder.com/800x400/667eea/ffffff?text=Certificate+Download+Portal)
+![Website Preview](https://i.ibb.co/wZBY2Zz6/screencapture-127-0-0-1-5500-index-html-2025-05-28-19-47-56.png)
 
 ## ✨ Fitur Utama
 
