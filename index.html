@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Sertifikat - Cerdas Cermat Informatika Cup II 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏆 Download Sertifikat</h1>
+            <p>Cerdas Cermat Informatika Cup II 2025</p>
+        </div>
+
+        <div class="search-card">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Ketik nama Anda..."
+                    autocomplete="off"
+                >
+                <span class="search-icon">🔍</span>
+            </div>
+
+            <div id="results" class="results"></div>
+        </div>
+
+        <div class="instructions">
+            <h3>📋 Cara Download Sertifikat:</h3>
+            <ul>
+                <li>Ketik nama lengkap Anda di kolom pencarian</li>
+                <li>Sistem akan mencari nama yang sesuai secara otomatis</li>
+                <li>Klik tombol "Download Sertifikat" untuk mengunduh</li>
+                <li>Jika nama tidak ditemukan, pastikan ejaan sudah benar</li>
+                <li>Hubungi panitia jika mengalami kesulitan</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p class="copyright">&copy; 2025 Cerdas Cermat Informatika Cup II - HMPS-INF</p>
+        </div>
+    </div>
+
+    <script>
+        // Data peserta dan nama file sertifikat
+        const participants = [
+            { name: "Ranti", file: "Sertifikat_CerdasCermat_Ranti.pdf" },
+            { name: "Winda Anjani Safitri", file: "Sertifikat_CerdasCermat_Winda_Anjani_Safitri.pdf" },
+            { name: "Wardania Rahayu", file: "Sertifikat_CerdasCermat_Wardania_Rahayu.pdf" },
+            { name: "Raisya Salsabila", file: "Sertifikat_CerdasCermat_Raisya_Salsabila.pdf" },
+            { name: "Indri Fitri", file: "Sertifikat_CerdasCermat_Indri_Fitri.pdf" },
+            { name: "Dwi Putri Mayangsari", file: "Sertifikat_CerdasCermat_Dwi_Putri_Mayangsari.pdf" },
+            { name: "Reza Ayu Fathurrahim", file: "Sertifikat_CerdasCermat_Reza_Ayu_Fathurrahim.pdf" },
+            { name: "Miftahul Rohma", file: "Sertifikat_CerdasCermat_Miftahul_Rohma.pdf" },
+            { name: "Keysa Tazkia", file: "Sertifikat_CerdasCermat_Keysa_Tazkia.pdf" },
+            { name: "Cherina", file: "Sertifikat_CerdasCermat_Cherina.pdf" },
+            { name: "Dina Astria", file: "Sertifikat_CerdasCermat_Dina_Astria.pdf" },
+            { name: "Khansa Nabila", file: "Sertifikat_CerdasCermat_Khansa_Nabila.pdf" },
+            { name: "Ricky Yuswan Tsanie Ramadhani", file: "Sertifikat_CerdasCermat_Ricky_Yuswan_Tsanie_Ramadhani.pdf" },
+            { name: "Fahri Saelendra", file: "Sertifikat_CerdasCermat_Fahri_Saelendra.pdf" },
+            { name: "Ibnu Mufadhol Assidiqi", file: "Sertifikat_CerdasCermat_Ibnu_Mufadhol_Assidiqi.pdf" },
+            { name: "Aston Harimurti", file: "Sertifikat_CerdasCermat_Aston_Harimurti.pdf" },
+            { name: "Rekaldo Saputra", file: "Sertifikat_CerdasCermat_Rekaldo_Saputra.pdf" },
+            { name: "Muhammad Ridho Utama", file: "Sertifikat_CerdasCermat_Muhammad_Ridho_Utama.pdf" },
+            { name: "M.Fadly Nafiisah", file: "Sertifikat_CerdasCermat_M.Fadly_Nafiisah.pdf" },
+            { name: "Mutia Frazelia", file: "Sertifikat_CerdasCermat_Mutia_Frazelia.pdf" },
+            { name: "Reinka Adi Sucipto", file: "Sertifikat_CerdasCermat_Reinka_Adi_Sucipto.pdf" },
+            { name: "Iren Agustin", file: "Sertifikat_CerdasCermat_Iren_Agustin.pdf" },
+            { name: "Natasa Oktafiani", file: "Sertifikat_CerdasCermat_Natasa_Oktafiani.pdf" },
+            { name: "Intan Putri Agus Tina", file: "Sertifikat_CerdasCermat_Intan_Putri_Agus_Tina.pdf" },
+            { name: "Hilwi Khusniyah", file: "Sertifikat_CerdasCermat_Hilwi_Khusniyah.pdf" },
+            { name: "Fariatul Fitriyah", file: "Sertifikat_CerdasCermat_Fariatul_Fitriyah.pdf" },
+            { name: "Dina Mi'rajul Nisaa", file: "Sertifikat_CerdasCermat_Dina_Mi'rajul_Nisaa.pdf" },
+            { name: "Jihad Desta Prayoga", file: "Sertifikat_CerdasCermat_Jihad_Desta_Prayoga.pdf" },
+            { name: "Muhammad Ibnu Atho'illah", file: "Sertifikat_CerdasCermat_Muhammad_Ibnu_Atho'illah.pdf" },
+            { name: "Miftakhul Assyifa", file: "Sertifikat_CerdasCermat_Miftakhul_Assyifa.pdf" },
+            { name: "Innaya Sari", file: "Sertifikat_CerdasCermat_Innaya_Sari.pdf" },
+            { name: "M.Agung Siregar", file: "Sertifikat_CerdasCermat_M.Agung_Siregar.pdf" },
+            { name: "Nasyifa Zahratul Hidayah", file: "Sertifikat_CerdasCermat_Nasyifa_Zahratul_Hidayah.pdf" },
+            { name: "Andreas Setiawan", file: "Sertifikat_CerdasCermat_Andreas_Setiawan.pdf" },
+            { name: "Novria Amelita Susanti", file: "Sertifikat_CerdasCermat_Novria_Amelita_Susanti.pdf" },
+            { name: "Sheren Jeslyn Oktaviani", file: "Sertifikat_CerdasCermat_Sheren_Jeslyn_Oktaviani.pdf" },
+            { name: "Syifa Alifatun Nikmah", file: "Sertifikat_CerdasCermat_Syifa_Alifatun_Nikmah.pdf" },
+            { name: "Qolbiyatus Syifa", file: "Sertifikat_CerdasCermat_Qolbiyatus_Syifa.pdf" },
+            { name: "Dewi Dzakirotul Faiza", file: "Sertifikat_CerdasCermat_Dewi_Dzakirotul_Faiza.pdf" },
+            { name: "Fahri Irwansyah", file: "Sertifikat_CerdasCermat_Fahri_Irwansyah.pdf" },
+            { name: "Adin Lency Pamungkas", file: "Sertifikat_CerdasCermat_Adin_Lency_Pamungkas.pdf" },
+            { name: "Labib Rifky Mashuri", file: "Sertifikat_CerdasCermat_Labib_Rifky_Mashuri.pdf" },
+            { name: "Putri Rizkiyawati", file: "Sertifikat_CerdasCermat_Putri_Rizkiyawati.pdf" },
+            { name: "Sendi Yang Agung", file: "Sertifikat_CerdasCermat_Sendi_Yang_Agung.pdf" },
+            { name: "Putri Puspita Sari", file: "Sertifikat_CerdasCermat_Putri_Puspita_Sari.pdf" },
+            { name: "Queenza Qanita", file: "Sertifikat_CerdasCermat_Queenza_Qanita.pdf" },
+            { name: "Muhammad Aris Ramadhan", file: "Sertifikat_CerdasCermat_Muhammad_Aris_Ramadhan.pdf" },
+            { name: "Addly Hubbul Tyawarman", file: "Sertifikat_CerdasCermat_Addly_Hubbul_Tyawarman.pdf" },
+            { name: "Sayna", file: "Sertifikat_CerdasCermat_Sayna.pdf" },
+            { name: "Nova", file: "Sertifikat_CerdasCermat_Nova.pdf" },
+            { name: "Dara", file: "Sertifikat_CerdasCermat_Dara.pdf" },
+            { name: "Melan", file: "Sertifikat_CerdasCermat_Melan.pdf" },
+            { name: "Vina", file: "Sertifikat_CerdasCermat_Vina.pdf" },
+            { name: "Endang", file: "Sertifikat_CerdasCermat_Endang.pdf" },
+            { name: "Gita Afriyanita", file: "Sertifikat_CerdasCermat_Gita_Afriyanita.pdf" },
+            { name: "Asja Iryansyah", file: "Sertifikat_CerdasCermat_Asja_Iryansyah.pdf" },
+            { name: "Fasya Putra Ramadhani", file: "Sertifikat_CerdasCermat_Fasya_Putra_Ramadhani.pdf" },
+            { name: "Anggraini Pratama Putri", file: "Sertifikat_CerdasCermat_Anggraini_Pratama_Putri.pdf" },
+            { name: "Lely Apriana", file: "Sertifikat_CerdasCermat_Lely_Apriana.pdf" },
+            { name: "Bagus Erdi Anom", file: "Sertifikat_CerdasCermat_Bagus_Erdi_Anom.pdf" },
+            { name: "Nur Azizah Azzahra", file: "Sertifikat_CerdasCermat_Nur_Azizah_Azzahra.pdf" },
+            { name: "Isabela Yunita", file: "Sertifikat_CerdasCermat_Isabela_Yunita.pdf" },
+            { name: "Syifa Deya Dinanti", file: "Sertifikat_CerdasCermat_Syifa_Deya_Dinanti.pdf" },
+            { name: "Khaylyla Nur Fatimah", file: "Sertifikat_CerdasCermat_Khaylyla_Nur_Fatimah.pdf" },
+            { name: "Khairani Haji", file: "Sertifikat_CerdasCermat_Khairani_Haji.pdf" },
+            { name: "Mohammad Iqbal", file: "Sertifikat_CerdasCermat_Mohammad_Iqbal.pdf" },
+            { name: "Diana Ayu Safitri", file: "Sertifikat_CerdasCermat_Diana_Ayu_Safitri.pdf" },
+            { name: "Nadia Alfani Rahman", file: "Sertifikat_CerdasCermat_Nadia_Alfani_Rahman.pdf" },
+            { name: "Sabrina Auliya Nisa", file: "Sertifikat_CerdasCermat_Sabrina_Auliya_Nisa.pdf" },
+            { name: "Zivanna Saskia Ramadhani", file: "Sertifikat_CerdasCermat_Zivanna_Saskia_Ramadhani.pdf" },
+            { name: "Reni Nur Hidayanti", file: "Sertifikat_CerdasCermat_Reni_Nur_Hidayanti.pdf" },
+            { name: "Brian Al Khafi", file: "Sertifikat_CerdasCermat_Brian_Al_Khafi.pdf" },
+            { name: "Annisa Sabrina", file: "Sertifikat_CerdasCermat_Annisa_Sabrina.pdf" },
+            { name: "Mujauharotul Azizah", file: "Sertifikat_CerdasCermat_Mujauharotul_Azizah.pdf" },
+            { name: "Reva Octavia Aisyah Faja", file: "Sertifikat_CerdasCermat_Reva_Octavia_Aisyah_Faja.pdf" }
+        ];
+
+        const searchInput = document.getElementById('searchInput');
+        const resultsContainer = document.getElementById('results');
+
+        // Fungsi untuk menormalkan teks (menghilangkan aksen, case insensitive)
+        function normalizeText(text) {
+            return text.toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .replace(/[^a-z0-9\s]/g, '');
+        }
+
+        // Fungsi untuk mencari peserta
+        function searchParticipants(query) {
+            if (!query.trim()) {
+                return [];
+            }
+
+            const normalizedQuery = normalizeText(query);
+            return participants.filter(participant => {
+                const normalizedName = normalizeText(participant.name);
+                return normalizedName.includes(normalizedQuery);
+            });
+        }
+
+        // Fungsi untuk menampilkan hasil
+        function displayResults(results) {
+            if (results.length === 0) {
+                resultsContainer.innerHTML = `
+                    <div class="no-results">
+                        <p>😔 Nama tidak ditemukan</p>
+                        <p style="font-size: 0.9rem; margin-top: 10px;">
+                            Pastikan ejaan nama sudah benar atau hubungi panitia.
+                        </p>
+                    </div>
+                `;
+                return;
+            }
+
+            resultsContainer.innerHTML = results.map((participant, index) => `
+                <div class="participant-card" style="animation-delay: ${index * 0.1}s">
+                    <div class="participant-info">
+                        <h3>${participant.name}</h3>
+                        <p>Peserta Cerdas Cermat Informatika Cup II 2025</p>
+                    </div>
+                    <a href="certificates/${participant.file}" 
+                       class="download-btn" 
+                       download="${participant.file}">
+                        📄 Download Sertifikat
+                    </a>
+                </div>
+            `).join('');
+        }
+
+        // Event listener untuk pencarian real-time
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value;
+            const results = searchParticipants(query);
+            displayResults(results);
+        });
+
+        // Fokus otomatis ke input saat halaman dimuat
+        window.addEventListener('load', () => {
+            searchInput.focus();
+        });
+    </script>
+</body>
+</html>
