@@ -202,5 +202,9 @@ body {
     .copyright {
         font-size: 80%;
     }
+
+    .instructions ul li {
+        font-size: 72%;
+    }
 }
 
