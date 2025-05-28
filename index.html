@@ -128,7 +128,7 @@
         const searchInput = document.getElementById('searchInput');
         const resultsContainer = document.getElementById('results');
 
-        // Fungsi untuk menormalkan teks (menghilangkan aksen, case insensitive)
+        // menormalkan teks (menghilangkan aksen, case insensitive)
         function normalizeText(text) {
             return text.toLowerCase()
                 .normalize('NFD')
@@ -136,7 +136,7 @@
                 .replace(/[^a-z0-9\s]/g, '');
         }
 
-        // Fungsi untuk mencari peserta
+        // mencari peserta
         function searchParticipants(query) {
             if (!query.trim()) {
                 return [];
@@ -149,7 +149,7 @@
             });
         }
 
-        // Fungsi untuk menampilkan hasil
+        // menampilkan hasil
         function displayResults(results) {
             if (results.length === 0) {
                 resultsContainer.innerHTML = `
